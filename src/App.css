@@ -1,0 +1,15 @@
+/* Ensure body and html have no margin to prevent unexpected offsets */
+ body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Optional: if your element is inside containers that might hide overflow */
+  .container {
+    overflow-x: visible; /* Make sure parent containers allow for the element to be visible even when it starts off-screen */
+  }
+  
+  #swoosh-in {
+    /* Initial positioning not required here for GSAP, but make sure it's visible */
+    visibility: visible; /* Ensures the element is not hidden */
+  }

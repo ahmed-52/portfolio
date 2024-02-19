@@ -65,3 +65,7 @@
   .transition-bg {
     transition: background-color 0.5s ease; /* Adjust time (0.5s) and easing function (ease) as desired */
   }
+
+  body {
+    cursor: none;
+  }

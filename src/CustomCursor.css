@@ -1,0 +1,10 @@
+.custom-cursor {
+    position: fixed;
+    width: 13px; /* Adjust the size of the circle */
+    height: 13px; /* Adjust the size of the circle */
+    background-color: #8C8C73; /* Customize the cursor color */
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+  }
