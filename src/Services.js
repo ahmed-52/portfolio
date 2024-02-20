@@ -15,6 +15,7 @@ export default function Services() {
     "JavaScript",
     "SQL",
     "PHP",
+    "ReactJS",
     "HTML & CSS",
     "TailwindCSS",
     "GSAP",
