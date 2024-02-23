@@ -1,7 +1,7 @@
 import './fonts.css';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import { useRef } from 'react';
 import CustomCursor from './CustomCursor';
 import Services from './Services';
@@ -14,7 +14,7 @@ function App() {
 gsap.registerPlugin(ScrollTrigger);
 
 
-const sections = [
+const sections = useMemo(() => [
   { id: 'section1', color: '#FAFAF8' },
   { id: 'section2', color: '#10100E' },
   { id: 'section3', color: '#85856D' },
@@ -22,7 +22,7 @@ const sections = [
   { id: 'section5', color: '#1E1E1E'},
   { id: 'section6', color: '#FFFFFF'}
   // Add more sections as needed
-];
+], []); 
 
 
 
@@ -147,9 +147,9 @@ useEffect(() => {
                 </div>
                 <div>
                     <ul className="flex gap-5">
-                        <a onClick={(e) => handleScroll(e, 'section3')}  href="#" className="md:text-3xl text-xl font-cabinet font-medium">About</a>
-                        <a onClick={(e) => handleScroll(e, 'section5')}  href="#" className="md:text-3xl text-xl font-cabinet font-medium">Projects</a>
-                        <a onClick={(e) => handleScroll(e, 'section6')}  href="#" className="md:text-3xl text-xl font-cabinet font-medium">Contact</a>
+                        <a onClick={(e) => handleScroll(e, 'section3')}  href="#section3" className="md:text-3xl text-xl font-cabinet font-medium">About</a>
+                        <a onClick={(e) => handleScroll(e, 'section5')}  href="#section5" className="md:text-3xl text-xl font-cabinet font-medium">Projects</a>
+                        <a onClick={(e) => handleScroll(e, 'section6')}  href="#section6" className="md:text-3xl text-xl font-cabinet font-medium">Contact</a>
                     </ul>
                 </div>
             </nav>
