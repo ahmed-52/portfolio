@@ -34,30 +34,36 @@ export default function Footer() {
   <div className='max-w-[1300px] mx-auto'>
 <div className='pt-[50px] flex justify-center items-center gap-6 mb-20'><img className='md:w-auto w-6' src='circle.svg'></img><h1 className='font-cabinet font-medium md:text-[62px] lg:text-[96px] sm:text-[40px] text-[27px]'>Contact</h1><img className='rotate-180 md:w-auto w-6' src='circle.svg'></img></div>
 
-        <div className='flex justify-evenly items-center'>
+        <div className='flex justify-around items-center mx auto'>
             
             
             <div className="flex flex-col justify-center items-center">
-                <h2 className="font-bold font-cabinet text-[25px] text-black text-center">Contact Details</h2>
+                <h2 className="font-bold font-cabinet text-[25px] text-black text-center border-b-2 border-[#85856C] pb-[0px] mb-3">Contact Details</h2>
                 <a href="mailto:aaa384@cornell.edu" className="font-cabinet test-[15px] text-center">aaa384@cornell.edu</a>
                 <p className="font-cabinet test-[15px] text-center">+1 (929)-312-9571</p>
             </div>
             
             
             <div className="flex flex-col justify-center items-center">
-                <h2 className="font-bold font-cabinet text-[25px] text-black text-center">Location</h2>
+                <h2 className="font-bold font-cabinet text-[25px] text-black text-center border-b-2 border-[#85856C] pb-[0px] mb-3">Location</h2>
                 <p className="font-cabinet test-[15px] text-center">Ithaca, New York</p>
                 <p className="font-cabinet test-[15px] text-center">{time}</p>
             </div>
             
             
+            
             <div className="flex flex-col justify-center items-center">
-                <h2 className="font-bold font-cabinet text-[25px] text-black text-center">Socials</h2>
-
-                    <div className='flex justify-center items-center'><img className='' src='linkedin.svg'></img><a href='https://www.linkedin.com/in/ahmed-abdulla-1aa908253/' className="-mb-2 font-cabinet test-[15px] text-center "> Linkedin</a></div>
-                    <div className='flex justify-center items-center'><img src='insta.svg'></img><a href='https://www.instagram.com/ahmed.veo/' className="font-cabinet test-[15px] text-center ">  Instagram</a></div>
-
+                <h2 className="font-bold font-cabinet text-[25px] text-black text-center border-b-2 border-[#85856C] pb-[0px] mb-3">Socials</h2>
+                <a href="https://www.linkedin.com/in/ahmed-abdulla-1aa908253/" className="font-cabinet text-[15px] text-center relative group">
+                Linkedin
+                <span className="absolute inset-x-0 bottom-0 w-full h-0.5 bg-black transform origin-center scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-out"></span>
+              </a>
+              <a href="https://github.com/ahmed-52" className="font-cabinet text-[15px] text-center relative group">
+                Github
+                <span className="absolute inset-x-0 bottom-0 w-full h-0.5 bg-black transform origin-center scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-out"></span>
+              </a>
             </div>
+            
         </div>
 
         
@@ -65,7 +71,7 @@ export default function Footer() {
 
 
 
-        <div className="mt-[200px] mb-5 flex justify-center items-center"><p className='font-bold font-general'>© {currentYear} Ahmed Abdulla. All rights Reserved.</p></div>
+        <div className="mt-[200px] mb-5 flex justify-center items-center"><p className='font-general'>© {currentYear} Ahmed Abdulla. All rights Reserved.</p></div>
         </div>
         </main>
   
