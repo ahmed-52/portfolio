@@ -69,7 +69,7 @@ useEffect(() => {
   });
 
   return () => ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-}, []);
+}, [sections.current]);
 
 
 
@@ -143,7 +143,7 @@ useEffect(() => {
 
    <nav ref={navbar} className="p-[35px] flex justify-between items-center sm:flex-row flex-col sm:gap-0 gap-5">
                 <div>
-                    <img className='md:w-auto w-[100px]' src='logo.svg'></img>
+                    <img alt='logo'  className='md:w-auto w-[100px]' src='logo.svg'></img>
                 </div>
                 <div>
                     <ul className="flex gap-5">
@@ -183,7 +183,7 @@ useEffect(() => {
 
     {/* third section */}
     <div id='section3' className='h-auto mt-10 mb-20'>
-      <div className='pt-[50px] flex justify-center items-center gap-6'><img className='md:w-auto w-6' src='aboutico.svg'></img><h1 className='font-general font-medium md:text-[62px] lg:text-[96px] text-[40px]  text-[#FFFFE3]'>About</h1><img className='rotate-180 md:w-auto w-6' src='aboutico.svg'></img></div>
+      <div className='pt-[50px] flex justify-center items-center gap-6'><img alt='icon' className='md:w-auto w-6' src='aboutico.svg'></img><h1 className='font-general font-medium md:text-[62px] lg:text-[96px] text-[40px]  text-[#FFFFE3]'>About</h1><img alt='icon'  className='rotate-180 md:w-auto w-6' src='aboutico.svg'></img></div>
 
     <div className='max-w-[1300px] mx-auto'>
       <div className='flex lg:items-start items-center justify-around lg:flex-row flex-col-reverse mt-20 lg:gap-0 gap-5'>
@@ -210,7 +210,7 @@ useEffect(() => {
 
 
     <div id='section4' className='my-10'>
-      <div className='pt-[50px] flex justify-center items-center gap-6'><img className='w-[5vw]' id="experience-img" src='experience.svg'></img><h1 className='font-general font-medium text-[5vw] text-[#1E1E1E]'>My Expertise</h1><img id="experience-img" className='w-[5vw]'  src='experience.svg'></img></div>
+      <div className='pt-[50px] flex justify-center items-center gap-6'><img alt='icon'  className='w-[5vw]' id="experience-img" src='experience.svg'></img><h1 className='font-general font-medium text-[5vw] text-[#1E1E1E]'>My Expertise</h1><img alt='icon'  id="experience-img" className='w-[5vw]'  src='experience.svg'></img></div>
 
 <div className='mx-3 flex justify-center items-center'>
 <Services  />

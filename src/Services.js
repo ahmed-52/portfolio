@@ -1,5 +1,4 @@
 import ServiceUi from "./ServicesUI";
-import Heading from "./Heading";
 
 export default function Services() {
   const expertiseItems = [

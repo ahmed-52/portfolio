@@ -28,11 +28,11 @@ export default function Work() {
 
     return(
         <div id='section5' className=''>
-        <div className='pt-[50px] flex justify-center items-center gap-6'><img className='w-[5vw]' src='recent.svg'></img><h1 className='font-general font-medium lg:text-[96px] md:text-[60px] text-[30px] text-[#FFFFE3]'>Recent Work</h1><img className='w-[5vw] rotate-180' src='recent.svg'></img></div>
+        <div className='pt-[50px] flex justify-center items-center gap-6'><img alt='icon' className='w-[5vw]' src='recent.svg'></img><h1 className='font-general font-medium lg:text-[96px] md:text-[60px] text-[30px] text-[#FFFFE3]'>Recent Work</h1><img img alt='icon' className='w-[5vw] rotate-180' src='recent.svg'></img></div>
   
   
             <div className='flex justify-center items-center flex-col'>
-              <img onClick={() => handleClicks("dalia")} className='w-full lg:w-[600px] h-auto recent-work max-w-[600px] hover:scale-105 transition-transform duration-500 ease-in-out' src='daliaProduct.png'></img>
+              <img  alt='daliaHealth'  onClick={() => handleClicks("dalia")} className='w-full lg:w-[600px] h-auto recent-work max-w-[600px] hover:scale-105 transition-transform duration-500 ease-in-out' src='daliaProduct.png'></img>
               <div className='flex flex-col justify-start items-start ml-2'>
                 <h2 className='md:text-[30px] text-[20px] text-[#FFFFE3] font-cabinet font-medium'>DALIA HEALTH</h2>
                   <div className='flex justify-start items-start md:gap-5 gap-1 md:flex-row flex-col'>
@@ -47,7 +47,7 @@ export default function Work() {
 
 
             <div className='flex justify-center md:flex-row flex-col items-center md:gap-[40px] lg:gap-[70px] gap-1 md:mb-1 mb-[10vh] mt-[10vh] mx-2'>
-                <img onClick={() => handleClicks("dalia")} className='w-full h-auto max-w-[450px] mx-5 hover:scale-105 transition-transform duration-500 ease-in-out' src='diagnosis.png'></img>
+                <img alt='daliaHealth'  onClick={() => handleClicks("dalia")} className='w-full h-auto max-w-[450px] mx-5 hover:scale-105 transition-transform duration-500 ease-in-out' src='diagnosis.png'></img>
                 <p className='max-w-[500px] font-general font-medium md:text-[20px] text-[15px] text-white '>
                     On the doctor side, I focused on designing the doctor's 
                     interface, shaping how they interact with the application. 
@@ -56,8 +56,8 @@ export default function Work() {
             </div>
 
             <div className='flex justify-center items-center lg:gap-[5vw] sm:gap-2 flex-wrap'>
-                <img onClick={() => handleClicks("daliaprovider")} className='w-full h-auto max-w-[350px] px-4 lg:pt-[200px] hover:scale-105 transition-transform duration-500 ease-in-out' src='DiagnosisInformation.png'></img>
-               <img onClick={() => handleClicks("daliaprovider")} className='w-full h-auto max-w-[480px] hover:scale-105 transition-transform duration-500 ease-in-out px-2' src='patientCentric.png'></img>
+                <img alt='daliaHealth'  onClick={() => handleClicks("daliaprovider")} className='w-full h-auto max-w-[350px] px-4 lg:pt-[200px] hover:scale-105 transition-transform duration-500 ease-in-out' src='DiagnosisInformation.png'></img>
+               <img  alt='daliaHealth' onClick={() => handleClicks("daliaprovider")} className='w-full h-auto max-w-[480px] hover:scale-105 transition-transform duration-500 ease-in-out px-2' src='patientCentric.png'></img>
             </div>
 
 
@@ -67,7 +67,7 @@ export default function Work() {
 <h1 className='lg:text-[60px] md:text-[50px] text-[45px] m-0 font-general text-[#EEEEEE] mb-[100px] self-start'>Projects.</h1>
     
     <div className='flex justify-center items-start md:flex-row flex-col gap-5 mb-40'>
-    <img onClick={() => handleClicks("aliens")} className='w-full h-auto max-w-[350px] hover:scale-105 transition-transform duration-500 ease-in-out' src='aliens.png'></img>
+    <img alt='aliens game'  onClick={() => handleClicks("aliens")} className='w-full h-auto max-w-[350px] hover:scale-105 transition-transform duration-500 ease-in-out' src='aliens.png'></img>
         
         <div>
         <h2 className='md:text-[30px] text-[20px] text-[#FFFFE3] font-cabinet font-medium'>ALIEN INVADERS</h2>
@@ -90,7 +90,7 @@ export default function Work() {
 
 
     <div className='flex justify-center items-start gap-5 self-end flex-col md:flex-row-reverse mb-40'>
-    <img onClick={() => handleClicks("connectn")} className='w-full h-auto max-w-[350px] hover:scale-105 transition-transform duration-500 ease-in-out' src='connectn.png'></img>
+    <img alt='connectn game'  onClick={() => handleClicks("connectn")} className='w-full h-auto max-w-[350px] hover:scale-105 transition-transform duration-500 ease-in-out' src='connectn.png'></img>
     <div>
         <h2 className='md:text-[30px] text-[20px] text-[#FFFFE3] font-cabinet font-medium'>CONNECTN</h2>
             <div className='flex justify-start items-start md:gap-5 gap-1 flex-col'>
@@ -134,14 +134,14 @@ export default function Work() {
 
 <div className='flex flex-col justify-center items-center gap-5'>
     <h2 className='font-cabinet text-[30px] text-[#FAFAF8]'>Task Manager</h2>
-    <img onClick={() => handleClicks("weather")} className='w-full h-auto max-w-[350px] hover:scale-105 transition-transform duration-500 ease-in-out' src='taskmanager.png'></img>
+    <img alt='weather'  onClick={() => handleClicks("weather")} className='w-full h-auto max-w-[350px] hover:scale-105 transition-transform duration-500 ease-in-out' src='taskmanager.png'></img>
     <p className='max-w-[400px] text-center text-[#FAFAF8]'>Developed a Flask-based task manager with SQL for efficient organization and task data management, supporting addition, editing, and deletion.</p>
 </div>
 
 
 <div className='flex flex-col justify-center items-center gap-5'>
     <h2 className='font-cabinet text-[30px] text-[#FAFAF8]'>Hangman</h2>
-    <img onClick={() => handleClicks("hangman")} className='w-full h-auto max-w-[350px] hover:scale-105 transition-transform duration-500 ease-in-out' src='hangmanGam.png'></img>
+    <img alt='hangman'  onClick={() => handleClicks("hangman")} className='w-full h-auto max-w-[350px] hover:scale-105 transition-transform duration-500 ease-in-out' src='hangmanGam.png'></img>
     <p className='max-w-[400px] text-center text-[#FAFAF8]'>
 Developed a Hangman game with a visually engaging interface. Implemented interactive and user-friendly features for an enjoyable gaming experience, offering challenges and entertainment.</p>
 </div>
@@ -150,7 +150,7 @@ Developed a Hangman game with a visually engaging interface. Implemented interac
 
 <div className='flex flex-col justify-center items-center gap-5'>
     <h2 className='font-cabinet text-[30px] text-[#FAFAF8]'>WeatherApp</h2>
-    <img onClick={() => handleClicks("weather")} className='w-full h-auto max-w-[350px] hover:scale-105 transition-transform duration-500 ease-in-out' src='weatherapp.png'></img>
+    <img alt='weather'  onClick={() => handleClicks("weather")} className='w-full h-auto max-w-[350px] hover:scale-105 transition-transform duration-500 ease-in-out' src='weatherapp.png'></img>
     <p className='max-w-[400px] text-center text-[#FAFAF8]'>Programmed a weather application using the OpenWeather API and ReactJS, delivering real-time weather information. Implemented features for retrieving and displaying current weather data, forecasts, and location-specific details.</p>
 </div>
 

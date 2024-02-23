@@ -32,7 +32,7 @@ export default function Footer() {
       
         <main className="">
   <div className='max-w-[1300px] mx-auto'>
-<div className='pt-[50px] flex justify-center items-center gap-6 mb-20'><img className='md:w-auto w-[3vw]' src='circle.svg'></img><h1 className='font-cabinet font-medium md:text-[62px] lg:text-[96px] sm:text-[40px] text-[27px]'>Contact</h1><img className='rotate-180 md:w-auto w-[3vw]' src='circle.svg'></img></div>
+<div className='pt-[50px] flex justify-center items-center gap-6 mb-20'><img alt='icon' className='md:w-auto w-[3vw]' src='circle.svg'></img><h1 className='font-cabinet font-medium md:text-[62px] lg:text-[96px] sm:text-[40px] text-[27px]'>Contact</h1><img className='rotate-180 md:w-auto w-[3vw]' alt='icon' src='circle.svg'></img></div>
 
         <div className='flex justify-evenly items-center flex-col-reverse sm:flex-row gap-5 sm:gap-0 mb-[50vh]'>
             
