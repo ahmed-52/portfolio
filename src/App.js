@@ -192,7 +192,7 @@ useEffect(() => {
 
           <div className='flex flex-col items-center justify-center gap-10'>
             <h2 className='text-[#FFFFE3] font-cabinet font-bold lg:text-[40px] text-[30px] text-center'>A brief Into who I am?</h2>
-            <p className='text-[#FFFFE3] font-cabinet font-medium text-[20px] max-w-[600px] text-center'>I'm an undergraduate student at Cornell University, majoring in computer science. Originally from Yemen, I was raised in New York City. I don’t just coding; I craft digital experiences that resonate, bridge gaps, and spark change. This passion is my compass, guiding me to explore uncharted territories in technology and beyond, always with the aim to leave a mark that transcends the digital world.</p>
+            <p className='text-[#FFFFE3] font-cabinet font-medium text-[20px] max-w-[600px] text-center'>I'm an undergraduate student at Cornell University, majoring in computer science. Originally from Yemen, I was raised in New York City. I don’t just code; I craft digital experiences that resonate, bridge gaps, and spark change. This passion is my compass, guiding me to explore uncharted territories in technology and beyond, always with the aim to leave a mark that transcends the digital world.</p>
             
             <p className='text-[#FFFFE3] font-cabinet font-medium text-[20px] max-w-[600px] text-center'>When I'm not developing or designing, you'll likely catch me unwinding with a lively game of badminton 🏸, teaming up for some  ⚽ soccer️, or enjoying a good cup of 
             coffee️ ☕</p>
