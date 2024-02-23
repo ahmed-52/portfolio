@@ -19,6 +19,7 @@ export default function Services() {
     "HTML & CSS",
     "TailwindCSS",
     "GSAP",
+    "Figma",
   ];
 
   return (
@@ -26,9 +27,7 @@ export default function Services() {
       <div className="space-y-14">
         <ServiceUi
           title="my expertises."
-          description="I focus on all things design and web related. With each of my
-          services, my goal is to deliver an impactful and elevating
-          digital experience for everyone."
+          description="I specialize in Software and Design, leveraging my skills to create innovative solutions and deliver exceptional user experiences."
           items={expertiseItems}
         />
         <ServiceUi

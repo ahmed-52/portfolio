@@ -35,7 +35,7 @@ export default function ServiceUi({ title, description, items }) {
     <div ref={serviceUi} className=" mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-24">
       <div className="space-y-6">
         <div className="space-y-3 2xl:space-y-10">
-          <h3 ref={heading} className="text-heading-3 2xl:text-7xl font-semibold leading-tight  translate-y-10 opacity-0">
+          <h3 ref={heading} className="text-heading-3 text-xl md:text-2xl lg:text-4xl xl:text-5xl font-semibold leading-tight translate-y-10 opacity-0">
             {title}
           </h3>
           <p ref={body} className="max-w-md xl:max-w-2xl text-body-1 2xl:text-3xl  translate-y-10 opacity-0">{description}</p>
@@ -46,7 +46,7 @@ export default function ServiceUi({ title, description, items }) {
       <div ref={services}  className=" select-none leading-[2.3rem] text-secondary-500 md:leading-[2.5rem] lg:leading-[3.4rem]  translate-y-10 opacity-0">
         {items.map((item, index) => {
           return (
-            <p key={index} className="text-[#A5A492] font-general text-special 2xl:text-7xl font-extrabold ">
+            <p key={index} className="text-[#A5A492] font-general text-special text-xl md:text-2xl lg:text-4xl xl:text-5xl font-extrabold ">
               {item}
             </p>
           );
