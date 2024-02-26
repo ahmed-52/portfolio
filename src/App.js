@@ -187,6 +187,8 @@ useEffect(() => {
       handleScroll({ preventDefault: () => {}, target: { id: 'section6' } }, 'section6');
     } else if (inputValue.trim().toLowerCase() === 'cd recent work') {
       handleScroll({ preventDefault: () => {}, target: { id: 'section5' } }, 'section5');
+    } else if (inputValue.trim().toLowerCase() === 'cd expertise') {
+      handleScroll({ preventDefault: () => {}, target: { id: 'section4' } }, 'section4');
 
     } else if (inputValue.trim().toLowerCase() === 'cd projects') {
       handleScroll({ preventDefault: () => {}, target: { id: 'projects' } }, 'projects');
