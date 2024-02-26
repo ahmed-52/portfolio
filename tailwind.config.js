@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         'cabinet': ['CabinetGrotesk', 'sans-serif'],
         'general': ['GeneralSans', 'sans-serif'],
+        'code': ['FiraCode', 'monospace'],
       },
     },
   },

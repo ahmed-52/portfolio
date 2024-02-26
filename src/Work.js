@@ -28,7 +28,7 @@ export default function Work() {
 
     return(
         <div id='section5' className=''>
-        <div className='pt-[50px] flex justify-center items-center gap-6'><img alt='icon' className='w-[5vw]' src='recent.svg'></img><h1 className='font-general font-medium lg:text-[96px] md:text-[60px] text-[30px] text-[#FFFFE3]'>Recent Work</h1><img img alt='icon' className='w-[5vw] rotate-180' src='recent.svg'></img></div>
+        <div className='pt-[50px] flex justify-center items-center gap-6'><img alt='icon' className='w-[5vw]' src='recent.svg'></img><h1 className='font-general font-medium lg:text-[96px] md:text-[60px] text-[30px] text-white'>Recent Work</h1><img img alt='icon' className='w-[5vw] rotate-180' src='recent.svg'></img></div>
   
   
             <div className='flex justify-center items-center flex-col'>
@@ -64,7 +64,7 @@ export default function Work() {
 <div className='mt-20 max-w-[1300px] md:mx-auto flex flex-col justify-center items-center mx-2'>
     
 <div>
-<h1 className='lg:text-[60px] md:text-[50px] text-[45px] m-0 font-general text-[#EEEEEE] mb-[100px] self-start'>Projects.</h1>
+<h1 id='projects' className='lg:text-[60px] md:text-[50px] text-[45px] m-0 font-general text-[#EEEEEE] mb-[100px] self-start'>Projects.</h1>
     
     <div className='flex justify-center items-start md:flex-row flex-col gap-5 mb-40'>
     <img alt='aliens game'  onClick={() => handleClicks("aliens")} className='w-full h-auto max-w-[350px] hover:scale-105 transition-transform duration-500 ease-in-out' src='aliens.png'></img>

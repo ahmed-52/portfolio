@@ -53,19 +53,19 @@
   
 
 
-  .text-stroke {
-    -webkit-text-stroke: 2px black; /* for Chrome and Safari */
-    text-stroke: 2px black; /* standard property, but not widely supported */
+  @font-face {
+    font-family: 'Fira';
+    src: url('/public/fonts/FiraCode-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
   }
   
+
+
   .no-blur-box-shadow {
     box-shadow: 20px 20px 0px 0px #000000;
   }
   
   .transition-bg {
     transition: background-color 0.5s ease; /* Adjust time (0.5s) and easing function (ease) as desired */
-  }
-
-  body {
-    cursor: none;
   }
