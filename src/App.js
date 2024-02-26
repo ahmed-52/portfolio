@@ -266,7 +266,7 @@ useEffect(() => {
 
     {/* third section */}
     <div id='section3' className='h-auto mt-20 mb-20'>
-      <h1 className='font-code lg:text-[40px] md:text-[30px] text-[20px] mx-3 text-white flex justify-center items-center mb-10 text-center '>ahmed@dhcp-vl2041-32556 ~ % cd about </h1>
+      <h1 className='font-cabinet font-bold lg:text-[80px] md:text-[60px] text-[50px] mx-3 text-white flex justify-center items-center mb-10 text-center '>About </h1>
 
 
       <div className='flex justify-center items-center'>
