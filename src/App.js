@@ -57,7 +57,6 @@ useEffect(() => {
     trigger: "#section1",
     start: "top center", // Start at the very top of the page
     end: "bottom center", // Adjust based on your layout
-    markers: true,
     onEnterBack: () => {
       gsap.to(mainElement, {backgroundColor: sections[0].color, duration: 0.6, ease: "power4.inOut"});
       // Change 'contTitle' color to gray when entering back to section 1
