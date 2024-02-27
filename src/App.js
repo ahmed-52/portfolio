@@ -55,8 +55,9 @@ useEffect(() => {
   // Explicitly handle the top of the document to revert to the first section's color
   ScrollTrigger.create({
     trigger: "#section1",
-    start: "top top", // Start at the very top of the page
+    start: "top center", // Start at the very top of the page
     end: "bottom center", // Adjust based on your layout
+    markers: true,
     onEnterBack: () => {
       gsap.to(mainElement, {backgroundColor: sections[0].color, duration: 0.6, ease: "power4.inOut"});
       // Change 'contTitle' color to gray when entering back to section 1
