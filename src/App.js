@@ -47,8 +47,6 @@ useEffect(() => {
 
 
 
-
-//background color changing
 useEffect(() => {
   const mainElement = document.getElementById('main');
 
@@ -59,12 +57,8 @@ useEffect(() => {
     end: "bottom center", // Adjust based on your layout
     onEnterBack: () => {
       gsap.to(mainElement, {backgroundColor: sections[0].color, duration: 0.6, ease: "power4.inOut"});
-      // Change 'contTitle' color to gray when entering back to section 1
-      gsap.to('#contTitle', {color: 'gray', duration: 0.6, ease: "power4.inOut"});
     },
   });
-
-  
 
   // Set triggers for other sections
   sections.forEach(section => {
@@ -74,20 +68,9 @@ useEffect(() => {
       end: "bottom center",
       onEnter: () => {
         gsap.to(mainElement, {backgroundColor: section.color, duration: 0.6, ease: "power4.inOut"});
-        // Conditionally change 'contTitle' color based on the section
-        if (section.id === 'section2') {
-          gsap.to('#contTitle', {color: '#FFFFE3', duration: 0.6, ease: "power4.inOut"});
-        } else {
-          gsap.to('#contTitle', {color: 'black', duration: 0.6, ease: "power4.inOut"});
-        }
       },
       onEnterBack: () => {
         gsap.to(mainElement, {backgroundColor: section.color, duration: 0.6, ease: "power4.inOut"});
-        if (section.id === 'section2') {
-          gsap.to('#contTitle', {color: '#FFFFE3', duration: 0.6, ease: "power4.inOut"});
-        } else {
-          gsap.to('#contTitle', {color: 'black', duration: 0.6, ease: "power4.inOut"});
-        }
       },
     });
   });
