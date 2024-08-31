@@ -11,6 +11,8 @@ import Footer from './Footer';
 
 function App() {
 
+const [time, setTime] = useState(new Date().toLocaleTimeString());
+
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -44,6 +46,12 @@ useEffect(() => {
   return () => clearInterval(intervalId);
 }, []);
 
+
+useEffect(() => {
+  setInterval(() => {
+    setTime(new Date().toLocaleTimeString());
+  }, 1000);
+});
 
 
 
@@ -175,8 +183,6 @@ useEffect(() => {
 
     } else if (inputValue.trim().toLowerCase() === 'cd projects') {
       handleScroll({ preventDefault: () => {}, target: { id: 'projects' } }, 'projects');
-    } else if (inputValue.trim().toLowerCase() === 'sleepy joe or trump?') {
-        setFeedback('trump');
       } else if (inputValue.trim().toLowerCase() === 'resume') {
         handleDownloadResume();
     } else {
@@ -190,10 +196,10 @@ useEffect(() => {
 
 
   const handleDownloadResume = () => {
-    const resumePath = 'Ahmed8.5.pdf';
+    const resumePath = 'AhmedAbdulla.pdf';
     const link = document.createElement('a');
     link.href = resumePath;
-    link.download = 'AhmedResume.pdf'; 
+    link.download = 'Ahmed-Resume.pdf'; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -207,16 +213,18 @@ useEffect(() => {
     <main id='main' className='bg-white'>
    <div >
 
-   <nav ref={navbar} className="p-[35px] flex justify-between items-center sm:flex-row flex-col sm:gap-0 gap-5">
+   <nav ref={navbar} className="p-[35px] flex justify-between items-center sm:flex-row flex-col sm:gap-0 gap-3">
                 <div>
                     <img alt='logo'  className='md:w-auto w-[100px]' src='logo.svg'></img>
                 </div>
+
                 <div>
-                    <ul className="flex gap-5">
-                        <a onClick={(e) => handleScroll(e, 'section3')}  href="#section3" className="md:text-3xl text-xl font-cabinet font-medium">About</a>
-                        <a onClick={(e) => handleScroll(e, 'section5')}  href="#section5" className="md:text-3xl text-xl font-cabinet font-medium">Projects</a>
-                        <a onClick={(e) => handleScroll(e, 'section6')}  href="#section6" className="md:text-3xl text-xl font-cabinet font-medium">Contact</a>
-                    </ul>
+                <ul className="flex gap-5">
+                    <a onClick={(e) => handleScroll(e, 'section3')} href="#section3" className="md:text-3xl text-xl font-cabinet font-medium underline-animation">About</a>
+                    <a onClick={(e) => handleScroll(e, 'section5')} href="#section5" className="md:text-3xl text-xl font-cabinet font-medium underline-animation">Projects</a>
+                    <a onClick={handleDownloadResume} className="md:text-3xl text-xl font-cabinet font-medium underline-animation hover:cursor-pointer">Resume</a>
+                    <a onClick={(e) => handleScroll(e, 'section6')} href="#section6" className="md:text-3xl text-xl font-cabinet font-medium underline-animation">Contact</a>
+                </ul>
                 </div>
             </nav>
 
@@ -224,7 +232,7 @@ useEffect(() => {
 
 
 
-
+    <p className='text-center md:text-2xl text-xl font-general font-medium'>{time}</p>
     <div id='section1' className='flex justify-center items-center h-[100vh] -mt-[50px]'>
 
     <div ref={divanim} className='bg-[#D2714F] py-[20px] md:px-[35px] px-[10%] no-blur-box-shadow overflow-visible'>
@@ -277,36 +285,41 @@ useEffect(() => {
 
 
             {/* /content */}
-            <div className='mt-5 mx-3'>
-              <p className='font-code text-[13px] text-start m-0'>{currentTime}</p>
-              <p className='font-code text-[13px] text-start mt-1'>ahmed@dhcp-vl2041-32556 desktop % cd about</p>
-              <p className='font-code text-[13px] text-start mt-10 text-[#4E4D4E]'>ahmed@dhcp-vl2041-32556 about % who is ahmed</p>
-              <p style={{ maxWidth: '80%' }} className='font-code text-[13px] text-start mt-1'>I'm an undergraduate student at Cornell University, majoring in computer science. Originally from Yemen, I was raised in New York City. I don’t just code; I craft digital experiences that resonate, bridge gaps, and spark change. This passion is my compass, guiding me to explore uncharted territories in technology and beyond, always with the aim to leave a mark that transcends the digital world. </p>
-              <p className='font-code text-[13px] text-start mt-10 text-[#4E4D4E]'>ahmed@dhcp-vl2041-32556 about % what do you do for fun</p>
-              <p style={{ maxWidth: '80%' }} className='font-code text-[13px] text-start mt-1'>I love to travel, explore new cultures, and meet new people. I also enjoy playing soccer ⚽, coffee ☕, and learning about new technologies. </p>
+            <div className='mt-5 mx-3 '>
+              <p className='font-code text-[13px] text-black text-start m-0'>{currentTime}</p>
+              <p className='font-code text-[13px]  text-black text-start mt-1'>ahmed@dhcp-vl2041-32556 desktop % <span className='font-bold'>cd about</span></p>
+              <p className='font-code text-[13px]  text-black text-start mt-5'>ahmed@dhcp-vl2041-32556 about % <span className='font-bold'>who is ahmed</span></p>
+             
+              <p className="max-w-[80%] border border-dashed border-black p-4 my-4 text-black font-mono text-[13px] bg-white text-start mt-2">
+  I'm an undergraduate student at Cornell University, majoring in computer science. Originally from Yemen, I was raised in New York City. I don’t just code; I craft digital experiences that resonate, bridge gaps, and spark change. This passion is my compass, guiding me to explore uncharted territories in technology and beyond, always with the aim to leave a mark that transcends the digital world.
+</p>
+
+              
+              <p className='font-code text-[13px]  text-black text-start mt-5'>ahmed@dhcp-vl2041-32556 about % <span className='font-bold'>what do you do for fun</span></p>
+              <p style={{ maxWidth: '80%' }} className='text-black font-code text-[13px] text-start mt-1 border border-dashed border-black p-4 my-4'>I love to travel, explore new cultures, and meet new people. I also enjoy playing futbol ⚽, coffee ☕, and learning about new technologies. </p>
               {/* <p className='font-code text-[13px] text-start mt-3'>ahmed@dhcp-vl2041-32556 about % what are you currently working on</p>
               <p style={{ maxWidth: '80%' }} className='font-code text-[13px] text-start mt-1'>I'm currently working on a project that aims to provide a platform for students to connect with professionals in their field of interest. </p> */}
               
-              <p className='font-code text-[13px] text-start mt-10 text-[#4E4D4E]'>ahmed@dhcp-vl2041-32556 about % ls</p>
+              <p className='font-code text-[13px] text-start mt-5  text-black '>ahmed@dhcp-vl2041-32556 about % ls</p>
               <div className='flex items-center gap-4'>
-              <p onClick={(e) => handleScroll(e, 'section5')} className='font-code text-[13px] text-start mt-1 cursor-pointer hover:underline'>Recent work</p>
-              <p onClick={(e) => handleScroll(e, 'section6')} className='font-code text-[13px] text-start mt-1 cursor-pointer hover:underline'>Contact</p>
-              <p onClick={(e) => handleScroll(e, 'projects')} className='font-code text-[13px] text-start mt-1 cursor-pointer hover:underline'>Projects</p>
-              <p onClick={(e) => handleScroll(e, 'section4')} className='font-code text-[13px] text-start mt-1 cursor-pointer hover:underline'>Expertise</p>
+              <p onClick={(e) => handleScroll(e, 'section5')} className='font-code text-[13px]  text-black text-start mt-1 cursor-pointer hover:underline underline'>Recent work</p>
+              <p onClick={(e) => handleScroll(e, 'section6')} className='font-code text-[13px]  text-black text-start mt-1 cursor-pointer hover:underline underline'>Contact</p>
+              <p onClick={(e) => handleScroll(e, 'projects')} className='font-code text-[13px]  text-black text-start mt-1 cursor-pointer hover:underline underline'>Projects</p>
+              <p onClick={(e) => handleScroll(e, 'section4')} className='font-code text-[13px]  text-black text-start mt-1 cursor-pointer hover:underline underline'>Expertise</p>
               </div>
 
-                  <div className='flex items-center mt-10'>
-      <label htmlFor='input' className='font-code text-[13px] text-start mt-1'>ahmed@dhcp-vl2041-32556 about % </label>
+                  <div className='flex items-center mt-5'>
+      <label htmlFor='input' className='font-code text-[13px] text-start mt-1 text-black '>ahmed@dhcp-vl2041-32556 about % </label>
       <input
         id='input'
         type='text'
-        className='self-end font-code text-[13px] text-start text-black bg-transparent border-none outline-none pl-1'
+        className='self-end font-code text-[13px] text-start text-black  bg-transparent border-none outline-none pl-1'
         value={inputValue}
         onChange={handleInputChange}
         onKeyDown={(e) => e.key === 'Enter' && handleEnter()}
       />
     </div>
-              <p className='font-code text-[13px] text-start mt-1'>{feedback}</p>
+              <p className='font-code text-[13px] text-start mt-1  text-green-500 '>{feedback}</p>
             
             </div>
 
