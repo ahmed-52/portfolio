@@ -222,7 +222,7 @@ useEffect(() => {
                 <ul className="flex gap-5">
                     <a onClick={(e) => handleScroll(e, 'section3')} href="#section3" className="md:text-3xl text-xl font-cabinet font-medium underline-animation">About</a>
                     <a onClick={(e) => handleScroll(e, 'section5')} href="#section5" className="md:text-3xl text-xl font-cabinet font-medium underline-animation">Projects</a>
-                    <a onClick={handleDownloadResume} className="md:text-3xl text-xl font-cabinet font-medium underline-animation hover:cursor-pointer">Resume</a>
+                    <div onClick={handleDownloadResume} className="md:text-3xl text-xl font-cabinet font-medium underline-animation hover:cursor-pointer">Resume</div>
                     <a onClick={(e) => handleScroll(e, 'section6')} href="#section6" className="md:text-3xl text-xl font-cabinet font-medium underline-animation">Contact</a>
                 </ul>
                 </div>
